@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Capítulo 1</a> <a href="pagina2.html">Capítulo 2</a>
+        <a href="pagina3.html" class="active">Capítulo 3</a>
+        <a href="pagina4.html">Capítulo 4</a>
+    </nav>
+
+    <div class="container">
+        <h1>Álbum del Tercer Mes</h1>
+
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="img/foto1.jpg" alt="Descripción foto" onclick="openModal(this)">
+                <p>Fecha:</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="img/foto2.jpg" alt="Descripción foto" onclick="openModal(this)">
+                <p>Fecha:</p>
+            </div>
+
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 3</p></div>
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 4</p></div>
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 5</p></div>
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 6</p></div>
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 7</p></div>
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 8</p></div>
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 9</p></div>
+            <div class="photo-card"><img src="https://via.placeholder.com/300" onclick="openModal(this)"><p>Momento 10</p></div>
+        </div>
+        
+        <a href="pagina2.html" class="btn">Siguiente Capítulo &rarr;</a>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
